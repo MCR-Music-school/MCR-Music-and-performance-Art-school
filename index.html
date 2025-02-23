@@ -14,7 +14,6 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
             color: #2c3e50;
             line-height: 1.6;
             margin: 0;
@@ -26,6 +25,9 @@
             color: white;
             padding: 60px 20px;
             text-align: center;
+            background-image: url('header-background.jpg'); /* Add background image */
+            background-size: cover;
+            background-position: center;
         }
         header h1 {
             font-size: 3.5rem;
@@ -46,6 +48,9 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+            background-image: url('about-background.jpg'); /* Add background image */
+            background-size: cover;
+            background-position: center;
         }
         #about h2 {
             font-size: 3rem;
@@ -64,37 +69,18 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+            background-image: url('waiting-list-background.jpg'); /* Add background image */
+            background-size: cover;
+            background-position: center;
         }
         #waiting-list h2 {
             font-size: 3rem;
             margin-bottom: 20px;
             font-family: 'Georgia', serif;
         }
-        #waiting-list form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        #waiting-list input, #waiting-list button {
-            padding: 15px;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            border: none;
-            margin: 5px;
-        }
-        #waiting-list input {
-            background-color: #ecf0f1;
-        }
-        #waiting-list button {
-            background-color: #8e44ad; /* Purple */
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        #waiting-list button:hover {
-            background-color: #6a1b9a; /* Darker purple */
+        #waiting-list p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
         }
 
         /* Poll Section */
@@ -103,34 +89,19 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+            background-image: url('poll-background.jpg'); /* Add background image */
+            background-size: cover;
+            background-position: center;
         }
         #poll h2 {
             font-size: 3rem;
             margin-bottom: 20px;
             font-family: 'Georgia', serif;
         }
-        #poll form {
-            display: inline-block;
-            margin-top: 20px;
-        }
-        #poll label {
-            font-size: 1.2rem;
-            margin-right: 20px;
-        }
-        #poll input[type="radio"] {
-            margin-right: 10px;
-        }
-        #poll button {
-            padding: 10px 20px;
-            background-color: #8e44ad; /* Purple */
-            color: white;
+        #poll iframe {
+            width: 100%;
+            height: 725px;
             border: none;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        #poll button:hover {
-            background-color: #6a1b9a; /* Darker purple */
         }
 
         /* Contact Section */
@@ -139,6 +110,9 @@
             color: white;
             padding: 80px 20px;
             text-align: center;
+            background-image: url('contact-background.jpg'); /* Add background image */
+            background-size: cover;
+            background-position: center;
         }
         #contact h2 {
             font-size: 3rem;
@@ -192,19 +166,16 @@
     <section id="about">
         <div>
             <h2>About Us</h2>
-            <p>Welcome to the Manchester Music and Performance Art School, where we provide world-class training in music,Orrf, dance, and performance arts. Join our community of passionate individuals and take your artistry to the next level.</p>
+            <p>Welcome to the Manchester Music and Performance Art School, where we provide world-class training in music, dance, and performance arts. Join our community of passionate individuals and take your artistry to the next level.</p>
         </div>
     </section>
 
     <section id="waiting-list">
         <div>
             <h2>Join Our Waiting List</h2>
-            <p>If this sounds like something your child would love, join the waiting list! Your interest will help bring this vision to life, and you’ll be the first to know about our courses and launch updates</p>
-            <form action="submit_form.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
-                <input type="email" id="email" name="email" placeholder="Email Address" required>
-                <button type="submit">Join Waiting List</button>
-            </form>
+            <p>We are currently accepting new students for our exclusive programs. Sign up now to secure your spot!</p>
+            <!-- Embed Google Form here -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXK7zLlgz8vFndJ9u19yScf-Sz5zYfV6KfcdsJs6Br9rhrhw/viewform?embedded=true" width="640" height="725" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </section>
 
@@ -212,34 +183,20 @@
         <div>
             <h2>Quick Poll</h2>
             <p>What is your primary interest in joining the school?</p>
-            <form action="poll_submit.php" method="post">
-                <label for="interest-music">
-                    <input type="radio" id="interest-music" name="interest" value="Music"> Music
-                </label>
-                <label for="interest-dance">
-                    <input type="radio" id="interest-dance" name="interest" value="Dance"> Dance
-                </label>
-                <label for="interest-theatre">
-                    <input type="radio" id="interest-theatre" name="interest" value="Theatre"> Theatre
-                </label>
-                <label for="interest-other">
-                    <input type="radio" id="interest-other" name="interest" value="Other"> Other
-                </label>
-                <button type="submit">Submit</button>
-            </form>
+            <!-- Embed Google Form for Poll -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXK7zLlgz8vFndJ9u19yScf-Sz5zYfV6KfcdsJs6Br9rhrhw/viewform?embedded=true" width="640" height="725" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </section>
 
     <section id="contact">
         <div>
             <h2>Contact Us</h2>
-            <p>If you have any questions or need more information, feel free to reach out to us!</p>
-            <p><strong>Email:</strong> <a href="mailto:MCR.Music.School@gmail.com">MCR.Music.School@gmail.com</a></p>
+            <p>Have questions? Feel free to reach out to us via email at <a href="mailto:MCR.Music.School@gmail.com">MCR.Music.School@gmail.com</a>.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Manchester Music and Performance Art School | All Rights Reserved</p>
+        <p>&copy; 2025 Manchester Music and Performance Art School</p>
     </footer>
 </body>
 </html>

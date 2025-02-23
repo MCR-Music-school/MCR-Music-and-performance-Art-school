@@ -1,0 +1,27 @@
+/* Contact Section */
+#contact {
+    background-color: #34495E; /* Same background as the About section */
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #F39C12; /* Luxury gold */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #F1C40F;
+}

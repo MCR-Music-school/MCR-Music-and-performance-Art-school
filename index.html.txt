@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester Music and Performance Art School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Manchester Music and Performance Art School</h1>
+            <p>Discover your passion, enhance your talent.</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to the Manchester Music and Performance Art School, where we provide world-class training in music, dance, and performance arts. Join our community of passionate individuals and take your artistry to the next level.</p>
+        </div>
+    </section>
+
+    <section id="waiting-list">
+        <div class="container">
+            <h2>Join Our Waiting List</h2>
+            <p>We are currently accepting new students for our exclusive programs. Sign up now to secure your spot!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Join Waiting List</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="poll">
+        <div class="container">
+            <h2>Quick Poll</h2>
+            <p>What is your primary interest in joining the school?</p>
+            <form action="poll_submit.php" method="post">
+                <label for="interest-music">
+                    <input type="radio" id="interest-music" name="interest" value="Music"> Music
+                </label>
+                <label for="interest-dance">
+                    <input type="radio" id="interest-dance" name="interest" value="Dance"> Dance
+                </label>
+                <label for="interest-theatre">
+                    <input type="radio" id="interest-theatre" name="interest" value="Theatre"> Theatre
+                </label>
+                <label for="interest-other">
+                    <input type="radio" id="interest-other" name="interest" value="Other"> Other
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, feel free to reach out to us!</p>
+            <p><strong>Email:</strong> <a href="mailto:MCR.Music.School@gmail.com">MCR.Music.School@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Manchester Music and Performance Art School | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
